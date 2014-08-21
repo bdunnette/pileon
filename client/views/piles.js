@@ -34,6 +34,7 @@ map.setView([position.coords.latitude, position.coords.longitude], 13);
   query.observe({
     added: function (document) {
       var marker = L.marker(document.latlng, {icon:compostIcon}).addTo(map)
+	//.bindPopup("A pile of... something.")
         .on('click', function (event) {
           map.removeLayer(marker);
           Piles.remove({
