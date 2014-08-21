@@ -20,7 +20,7 @@ map.setView([position.coords.latitude, position.coords.longitude], 13);
 });
 };
 
-  L.tileLayer.provider('Thunderforest.Outdoors').addTo(map);
+  L.tileLayer.provider('OpenStreetMap.BlackAndWhite').addTo(map);
 
   map.on('dblclick', function (event) {
     Piles.insert({
@@ -28,10 +28,12 @@ map.setView([position.coords.latitude, position.coords.longitude], 13);
     });
   });
 
+  var compostIcon = L.icon({iconUrl:'img/CompostPile.png'});
+
   var query = Piles.find();
   query.observe({
     added: function (document) {
-      var marker = L.marker(document.latlng).addTo(map)
+      var marker = L.marker(document.latlng, {icon:compostIcon}).addTo(map)
         .on('click', function (event) {
           map.removeLayer(marker);
           Piles.remove({
