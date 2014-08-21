@@ -5,7 +5,11 @@
       "iron-router": {},
       "leaflet": {},
       "bootstrap-3": {},
-      "font-awesome": {}
+      "font-awesome": {},
+      "leaflet-draw": {
+        "git": "https://github.com/bdunnette/meteor-leaflet-draw.git",
+        "branch": "master"
+      }
     },
     "packages": {
       "iron-router": {
@@ -27,6 +31,11 @@
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
         "tag": "v4.1.0",
         "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
+      },
+      "leaflet-draw": {
+        "git": "https://github.com/bdunnette/meteor-leaflet-draw.git",
+        "branch": "master",
+        "commit": "af0cde9720bfc6005e16e4f3afcc239726bfd487"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

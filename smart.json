@@ -3,6 +3,9 @@
     "iron-router": {},
     "leaflet": {},
     "bootstrap-3": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "leaflet-draw": {
+	"git": "https://github.com/bdunnette/meteor-leaflet-draw.git"
+    }
   }
 }
